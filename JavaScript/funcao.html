@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Texto alterado";
+            }
+
+            function muda() {
+                document.getElementById("outro").innerHTML = "Mudei o nome no select e alterei o conteudo outro";
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Titulo</h1>
+        <p id="demo">Meu Paragrafo</p>
+        <span id="outro">Outro</span>
+        <br />
+        <br />
+        <button type="button" onclick="myFunction()">Alterar</button>
+        <br />
+        <br />
+        <select onchange="muda();">
+            <option>João</option>
+            <option>Maria</option>
+        </select>
+    </body>
+</html>
